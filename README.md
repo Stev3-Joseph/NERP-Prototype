@@ -94,6 +94,27 @@ Run every listed Part B experiment:
 npm run partb
 ```
 
+### Run the CPGM hardening experiment
+
+The Cross-Protocol Governance Monitor (CPGM) demonstrates an additional security-hardening mechanism for Paxos.
+
+It implements a Paxos State Recovery Guard that:
+
+Compares a recovered acceptor's current state against a trusted reference state.
+
+Detects mismatches in highestPromised and acceptedProposal.
+
+Quarantines an acceptor when state inconsistency is detected.
+
+Records the detected violation in datastore/audit.json.
+
+Blocks the quarantined acceptor from participating in the experiment.
+
+Run the experiment:
+```powershell
+npm run paxos:cpgm
+```
+
 ## 5. Important notes
 
 - Run commands from the project root, where `package.json` is located.
