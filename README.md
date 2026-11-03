@@ -6,10 +6,6 @@ A simple Node.js prototype for the National Emergency Response Platform (NERP).
 
 Open PowerShell in the project folder:
 
-```powershell
-cd "C:\MSc Cyber\Assesment 3\nerp-prototype"
-```
-
 Check that Node.js and npm are installed:
 
 ```powershell
