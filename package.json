@@ -1,0 +1,38 @@
+{
+  "name": "nerp-prototype",
+  "version": "1.0.0",
+  "description": "National Emergency Response Platform prototype",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test:all",
+    "test:all": "npm run test:auth && npm run test:incidents && npm run test:dispatch && npm run test:intelligence && npm run test:audit && npm run test:analytics && npm run test:governance",
+    "test:auth": "node auth/test-auth.js",
+    "test:incidents": "node incidents/test-incidents.js",
+    "test:dispatch": "node dispatch/test-dispatch.js",
+    "test:intelligence": "node intelligence/test-intelligence.js",
+    "test:audit": "node audit/test-audit.js",
+    "test:analytics": "node analytics/test-analytics.js",
+    "test:governance": "node governance/test-governance.js",
+    "bft:equivocation": "node experiments/bft/equivocation.js",
+    "bft:key-theft": "node experiments/bft/key_theft.js",
+    "bft:sybil": "node experiments/bft/sybil.js",
+    "bft:all": "npm run bft:equivocation && npm run bft:key-theft && npm run bft:sybil",
+    "paxos:majority-loss": "node experiments/paxos/majority_loss.js",
+    "paxos:quorum-misconfiguration": "node experiments/paxos/quorum_misconfiguration.js",
+    "paxos:state-loss": "node experiments/paxos/state_loss.js",
+    "paxos:all": "npm run paxos:majority-loss && npm run paxos:quorum-misconfiguration && npm run paxos:state-loss",
+    "raft:election-storm": "node experiments/raft/election_storm.js",
+    "raft:leader-churn": "node experiments/raft/leader_churn.js",
+    "raft:network-partition": "node experiments/raft/network_partition.js",
+    "raft:all": "npm run raft:election-storm && npm run raft:leader-churn && npm run raft:network-partition",
+    "partb": "npm run bft:all && npm run paxos:all && npm run raft:all"
+  },
+  "keywords": [
+    "nerp",
+    "security",
+    "consensus"
+  ],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs"
+}
