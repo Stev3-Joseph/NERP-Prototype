@@ -138,5 +138,12 @@
         "action": "Viewed Intelligence Report",
         "resource": "INT-020",
         "timestamp": "2026-11-03T16:05:00Z"
+    },
+    {
+        "eventId": "AUD-021",
+        "actor": "CPGM Security Monitor",
+        "action": "PAXOS ACCEPTOR QUARANTINED",
+        "resource": "Region1-A1",
+        "timestamp": "2026-11-03T20:35:22.281Z"
     }
 ]

@@ -20,6 +20,7 @@
     "paxos:majority-loss": "node experiments/paxos/majority_loss.js",
     "paxos:quorum-misconfiguration": "node experiments/paxos/quorum_misconfiguration.js",
     "paxos:state-loss": "node experiments/paxos/state_loss.js",
+    "paxos:cpgm": "node experiments/paxos/cpgm_state_guard.js",
     "paxos:all": "npm run paxos:majority-loss && npm run paxos:quorum-misconfiguration && npm run paxos:state-loss",
     "raft:election-storm": "node experiments/raft/election_storm.js",
     "raft:leader-churn": "node experiments/raft/leader_churn.js",
