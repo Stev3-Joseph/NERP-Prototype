@@ -13,7 +13,7 @@ node -v
 npm -v
 ```
 
-No additional packages are currently required. Run the commands below from the folder containing `package.json`.
+No additional npm packages are required for the JavaScript services. Run the commands below from the folder containing `package.json`.
 
 ## 2. Run the service tests
 
@@ -41,6 +41,7 @@ npm test
 - **Datastores:** `datastore/` — JSON records for incidents, responders, dispatch, intelligence and audit
 - **Consensus models:** `consensus/` — BFT, Paxos and Raft implementations
 - **Experiments:** `experiments/` — attack and failure simulations for Part B
+- **Parts C and D:** `part-c-d-implementation/` — C implementation for data classification, governance and access control.
 
 The service test files demonstrate the corresponding service operations using the project data.
 
@@ -114,10 +115,27 @@ Run the experiment:
 ```powershell
 npm run paxos:cpgm
 ```
+## 5. Run Parts C and D
 
-## 5. Important notes
+Run these commands from the project root in Linux or Ubuntu WSL. Use the Linux versions of Node.js and npm. The C/D implementation reads the shared JSON files in `datastore/`.
+
+On Ubuntu, install the build and test dependencies if needed:
+
+```bash
+sudo apt install build-essential libssl-dev python3
+```
+
+Build the C/D executable and run the integration tests:
+
+```bash
+npm run partcd:build
+npm run partcd:test
+```
+
+A successful test run reports `"status": "PASS"` and `"checks": 33`.
+## 6. Important notes
 
 - Run commands from the project root, where `package.json` is located.
 - Experiment commands execute the JavaScript files in `experiments/`.
 - These are educational simulations. Their output demonstrates only the behaviour implemented by each experiment; do not assume a scenario proves full protocol-level behaviour unless the code actually models it.
-- The `policy engine` folder is not included in the service test commands because no JavaScript implementation or test file was listed in the current project structure.
+- `npm test` runs the JavaScript service tests. Use `npm run partcd:test` to test the C/D implementation separately.
