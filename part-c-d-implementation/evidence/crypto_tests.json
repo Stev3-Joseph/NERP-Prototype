@@ -1,0 +1,1 @@
+[{"test":"authenticated round trip","passed":true},{"test":"modified label/AAD rejected","passed":true},{"test":"ciphertext tampering rejected","passed":true}]

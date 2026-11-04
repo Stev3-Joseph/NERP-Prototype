@@ -26,7 +26,9 @@
     "raft:leader-churn": "node experiments/raft/leader_churn.js",
     "raft:network-partition": "node experiments/raft/network_partition.js",
     "raft:all": "npm run raft:election-storm && npm run raft:leader-churn && npm run raft:network-partition",
-    "partb": "npm run bft:all && npm run paxos:all && npm run raft:all"
+    "partb": "npm run bft:all && npm run paxos:all && npm run raft:all",
+    "partcd:build": "make -C part-c-d-implementation",
+    "partcd:test": "make -C part-c-d-implementation test"
   },
   "keywords": [
     "nerp",

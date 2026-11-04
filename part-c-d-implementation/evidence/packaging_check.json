@@ -1,0 +1,6 @@
+{
+  "status": "PASS",
+  "fresh_extraction_build": "strict C11, no compiler warnings",
+  "fresh_extraction_demo": "Loaded 100 records. 16 policy scenarios, 3 crypto tests and 4 lifecycle checks passed.",
+  "secrets_in_archive": false
+}

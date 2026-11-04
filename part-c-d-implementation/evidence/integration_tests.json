@@ -1,0 +1,138 @@
+{
+  "status": "PASS",
+  "checks": 33,
+  "results": [
+    {
+      "test": "16 policy experiments match expected outcomes",
+      "passed": true
+    },
+    {
+      "test": "D4.1 isolates confidentiality denial",
+      "passed": true
+    },
+    {
+      "test": "D4.2 isolates integrity denial",
+      "passed": true
+    },
+    {
+      "test": "D4.3 permits assigned incident",
+      "passed": true
+    },
+    {
+      "test": "BLP no write down and Biba no write up exercised",
+      "passed": true
+    },
+    {
+      "test": "all 100 supplied records classified",
+      "passed": true
+    },
+    {
+      "test": "secret incident sensitivity propagates into dispatch",
+      "passed": true
+    },
+    {
+      "test": "TOP SECRET intelligence sensitivity propagates into audit",
+      "passed": true
+    },
+    {
+      "test": "record classification differs from personnel clearance",
+      "passed": true
+    },
+    {
+      "test": "analytics excludes secret incidents and all raw intelligence",
+      "passed": true
+    },
+    {
+      "test": "allowlists remove names, contacts, locations and free text",
+      "passed": true
+    },
+    {
+      "test": "pseudonymous joins remain useful",
+      "passed": true
+    },
+    {
+      "test": "research has aggregate cells >= k and remains restricted",
+      "passed": true
+    },
+    {
+      "test": "operational view is scoped to paramedic R002",
+      "passed": true
+    },
+    {
+      "test": "three authenticated encryption checks pass",
+      "passed": true
+    },
+    {
+      "test": "four managed-copy lifecycle checks pass",
+      "passed": true
+    },
+    {
+      "test": "legal hold has priority over expired retention",
+      "passed": true
+    },
+    {
+      "test": "fixture input files are unchanged",
+      "passed": true
+    },
+    {
+      "test": "denied reads return no record data",
+      "passed": true
+    },
+    {
+      "test": "permitted reads are mediated by the policy engine",
+      "passed": true
+    },
+    {
+      "test": "fresh lower-label session handles legitimate blind write",
+      "passed": true
+    },
+    {
+      "test": "invalid retention date rejected",
+      "passed": true
+    },
+    {
+      "test": "retention time cannot roll backwards",
+      "passed": true
+    },
+    {
+      "test": "existing output is not overwritten",
+      "passed": true
+    },
+    {
+      "test": "modified lifecycle metadata fails HMAC verification",
+      "passed": true
+    },
+    {
+      "test": "unexpected fields cannot leak into generated views",
+      "passed": true
+    },
+    {
+      "test": "small research cells are suppressed",
+      "passed": true
+    },
+    {
+      "test": "undated records cannot silently expire",
+      "passed": true
+    },
+    {
+      "test": "tampered managed ciphertext returns no plaintext",
+      "passed": true
+    },
+    {
+      "test": "unknown classification is quarantined even for cleared users",
+      "passed": true
+    },
+    {
+      "test": "content-hint conflict escalates and requires review",
+      "passed": true
+    },
+    {
+      "test": "duplicate JSON keys are rejected",
+      "passed": true
+    },
+    {
+      "test": "malformed JSON, NUL, nonfinite numbers and unpaired surrogates rejected",
+      "passed": true
+    }
+  ]
+}

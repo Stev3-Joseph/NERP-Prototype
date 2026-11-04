@@ -1,0 +1,47 @@
+{
+  "C1": {
+    "words": 182,
+    "maximum": 250,
+    "note": "Whitespace count including table text; final institutional count may differ."
+  },
+  "C2": {
+    "words": 174,
+    "maximum": 250,
+    "note": "Whitespace count including table text; final institutional count may differ."
+  },
+  "C3": {
+    "words": 221,
+    "maximum": 300,
+    "note": "Whitespace count including table text; final institutional count may differ."
+  },
+  "C4": {
+    "words": 185,
+    "maximum": 250,
+    "note": "Whitespace count including table text; final institutional count may differ."
+  },
+  "D1": {
+    "words": 183,
+    "maximum": 250,
+    "note": "Whitespace count including table text; final institutional count may differ."
+  },
+  "D2": {
+    "words": 185,
+    "maximum": 250,
+    "note": "Whitespace count including table text; final institutional count may differ."
+  },
+  "D3": {
+    "words": 195,
+    "maximum": 250,
+    "note": "Whitespace count including table text; final institutional count may differ."
+  },
+  "D4": {
+    "words": 237,
+    "maximum": 300,
+    "note": "Whitespace count including table text; final institutional count may differ."
+  },
+  "D5": {
+    "words": 208,
+    "maximum": 250,
+    "note": "Whitespace count including table text; final institutional count may differ."
+  }
+}
