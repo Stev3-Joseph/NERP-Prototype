@@ -133,9 +133,3 @@ npm run partcd:test
 ```
 
 A successful test run reports `"status": "PASS"` and `"checks": 33`.
-## 6. Important notes
-
-- Run commands from the project root, where `package.json` is located.
-- Experiment commands execute the JavaScript files in `experiments/`.
-- These are educational simulations. Their output demonstrates only the behaviour implemented by each experiment; do not assume a scenario proves full protocol-level behaviour unless the code actually models it.
-- `npm test` runs the JavaScript service tests. Use `npm run partcd:test` to test the C/D implementation separately.
